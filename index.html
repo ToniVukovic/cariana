@@ -7,10 +7,10 @@
     <title>Cariana</title>
   </head>
   <body>
-    <nav>
+    <nav id="navbar">
       <div class="nav-content">
         <div class="logo-links">
-          <img src="/images/logo-nav.svg" alt="Cariana logo" />
+          <h1><img src="/images/logo-nav.svg" alt="Cariana logo" /></h1>
 
           <ul class="desktop-links">
             <li><a href="#">Home</a></li>
@@ -48,14 +48,11 @@
           alt="cariana logo in white"
         />
         <ul>
-          <!-- <li><a href="">About Us</a></li>
-          <li><a href="">Our Team</a></li>
-          <li><a href="">Careers</a></li> -->
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="ham-link" href="#">Home</a></li>
+          <li><a class="ham-link" href="#">Shop</a></li>
+          <li><a class="ham-link" href="#">Blog</a></li>
+          <li><a class="ham-link" href="#">Portfolio</a></li>
+          <li><a class="ham-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -68,11 +65,11 @@
               The Winter <br />
               <span class="hotlist">Hotlist</span>
             </h2>
-            <button class="collection-cta">VIEW COLLECTION</button>
+            <a href="#catalogue" class="collection-cta">VIEW COLLECTION</a>
           </div>
 
           <div class="img-container">
-            <img class="promo-box-img" src="/images/new-thinker.png" alt="" />
+            <img class="promo-box-img" src="/images/model3.png" alt="" />
           </div>
         </div>
       </section>
@@ -138,43 +135,156 @@
           <div class="object-box">
             <div class="object-img"><img src="/images/watch.png" alt="" /></div>
             <div class="object-text">
-              <h4>SHOES FOR MEN</h4>
-              <p>product description</p>
+              <h4>MEN'S WATCHES</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur amet optio odit reprehenderit ipsum minus expedita quas
+                eum vero dignissimos!
+              </p>
             </div>
           </div>
           <div class="object-box">
             <div class="object-img">
-              <img src="/images/shoes-gray.png" alt="" />
+              <img src="/images/mens-shoes.png" alt="" />
             </div>
             <div class="object-text">
               <h4>SHOES FOR MEN</h4>
-              <p>product description</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur amet optio odit reprehenderit ipsum minus expedita quas
+                eum vero dignissimos!
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- <section class="join">
-        <video autoplay muted loop>
-          <source src="/videos/stars.mp4" type="video/mp4" />
-        </video>
 
-        <div class="promo-box-content">
-          <div class="promo-box-text">
-            <h2 class="collection-name">
-              The Winter <br />
-              <span class="hotlist">Hotlist</span>
-            </h2>
-            <button class="collection-cta">VIEW COLLECTION</button>
-          </div>
+      <section class="catalogue-wrap">
+        <div class="catalogue">
+          <div class="catalogue-menu">
+            <ul class="selectors">
+              <li>
+                <a class="catalogue-btn" id="displayAll" role="button">All</a>
+              </li>
+              <li>
+                <a class="catalogue-btn" id="filterMaleButton" role="button"
+                  >Men</a
+                >
+              </li>
+              <li>
+                <a class="catalogue-btn" id="filterFemaleButton" role="button"
+                  >Women</a
+                >
+              </li>
+              <li>
+                <a class="catalogue-btn" id="filterHandbags" role="button"
+                  >Handbags</a
+                >
+              </li>
+              <li>
+                <a class="catalogue-btn" id="filterWatches" role="button"
+                  >Watches</a
+                >
+              </li>
+            </ul>
 
-          <div class="img-container">
-            <img class="promo-box-img" src="/images/new-thinker.png" alt="" />
+            <div class="menu-btns">
+              <button id="filterBtn" class="filter-dropdown">
+                SORT BY:
+                <img src="/images/down-arrow.svg" alt="downward arrow" />
+              </button>
+              <ul class="dropdown-content">
+                <li><button id="all">All</button></li>
+                <li><button id="hot">Hot</button></li>
+                <li><button id="sale">Sale</button></li>
+              </ul>
+            </div>
           </div>
+          <div class="catalogue-items" id="catalogue"></div>
+          <div class="load-more-wrap">
+            <button id="loadMore">LOAD MORE</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="faq" class="faq-wrap">
+        <div class="faq-content">
+          <h2>Frequently asked questions</h2>
+          <div class="accordion"></div>
         </div>
       </section> -->
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="footer-content">
+        <div class="copyright-box">
+          <img src="/images/logo-nav.svg" alt="footer logo" />
+          <p>
+            COPYRIGHT &copy; CARIANA <span id="year"></span> ALL RIGHTS RESERVED
+          </p>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="">Order History</a></li>
+            <li><a href="">My Account</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Checkout</a></li>
+            <li><a href="">Wishlist</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Shopping Cart</a></li>
+          </ul>
+        </div>
+        <div class="socials">
+          <ul>
+            <li>
+              <a href=""
+                ><img
+                  src="/images/facebook.svg"
+                  alt="facebook logo"
+                />Facebook</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="/images/instagram.svg"
+                  alt="instagram logo"
+                />Instagram</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="/images/youtube.svg" alt="youtube logo" />Youtube</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="/images/pinterest.svg"
+                  alt="pinterest logo"
+                />Pinterest</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="newsletter-wrap">
+          <div class="newsletter">
+            <p>
+              Sign up to our newsletter to get the latest news, announcements
+              and specials
+            </p>
+            <div class="subscribe-box">
+              <input type="text" placeholder="Enter your E-mail" />
+              <button>SUBSCRIBE</button>
+            </div>
+          </div>
+          <div class="payment-box"></div>
+        </div>
+      </div>
+    </footer>
 
     <script src="index.js"></script>
   </body>
