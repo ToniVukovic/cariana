@@ -87,7 +87,7 @@ nav {
   display: none;
   margin-top: 15px;
   font-family: "LexendLight";
-  gap: 40px;
+  gap: 27px;
   list-style-type: none;
 }
 
@@ -97,6 +97,12 @@ nav {
   }
   .logo-links .desktop-links {
     display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-links .desktop-links {
+    gap: 40px;
   }
 }
 
@@ -249,7 +255,7 @@ main::before {
   /* padding: 170px 0 0 0; */
   padding-top: 50px;
   /* border: 1px solid orange; */
-  width: 750px;
+  /* width: 750px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -296,7 +302,7 @@ main::before {
   background-color: var(--dark);
   color: var(--light);
   border-radius: 70px;
-  width: 100%;
+  width: 250px;
   padding: 18px;
   font-size: 12px;
   transition: 0.2s all;
@@ -311,12 +317,16 @@ main::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 10px 20px 10px;
 }
 
 @media (min-width: 768px) {
   .promo-box-text {
     padding: 30px;
     gap: 50px;
+  }
+  .img-container {
+    padding: 0;
   }
   .promo-box-img {
     width: 100%;
@@ -1142,3 +1152,116 @@ footer {
     order: 4;
   }
 }
+
+/* slider css */
+
+.slider-wrap {
+  position: relative;
+  background-color: var(--light);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-width {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 1300px;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  min-height: 680px;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.slide.current {
+  /* left: -70px; */
+  opacity: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide .content {
+  /* border: 3px solid red; */
+  position: relative;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(-100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.2s ease-in-out 0.2s;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 49;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.buttons button {
+  border: none;
+  background-color: #aaaaaa;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  outline: none;
+}
+
+.buttons button:hover .slider-arrow.left {
+  transform: translateX(-5px);
+}
+
+.buttons button:hover .slider-arrow.right {
+  transform: translateX(5px);
+}
+
+.slider-arrow {
+  width: 20px;
+  transition: 0.2s all;
+}
+
+/* slider css end */
