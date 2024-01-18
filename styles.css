@@ -678,7 +678,6 @@ main::before {
 .menu-btns {
   display: flex;
   flex-direction: column;
-  /* gap: 10px; */
 }
 
 .menu-btns .filter-dropdown,
@@ -991,8 +990,6 @@ footer {
 .footer-links {
   position: relative;
   gap: 30px;
-  /* width: 100%; */
-  /* justify-content: center; */
 }
 
 @media (min-width: 768px) {
@@ -1179,17 +1176,15 @@ footer {
 }
 
 .slide {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .slide.current {
-  /* left: -70px; */
   opacity: 1;
   height: 100%;
   display: flex;
@@ -1240,7 +1235,7 @@ footer {
 
 .buttons button {
   border: none;
-  background-color: #aaaaaa;
+  background-color: #aaaaaa70;
   cursor: pointer;
   display: flex;
   justify-content: center;

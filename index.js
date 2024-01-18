@@ -378,7 +378,7 @@ function filterByOptions(option) {
     .addEventListener("click", () => filterByOptions(type));
 });
 
-// slider functionality
+// this slider functionality was copied (and modified) from https://codesandbox.io/p/sandbox/vanilla-js-responsive-image-slider-vblu3?file=%2Fsrc%2Findex.js which is a piece of code written by milliwonkim
 
 const slides = document.querySelectorAll(".slide");
 const next = document.querySelector("#next");
