@@ -1,26 +1,26 @@
 @font-face {
   font-family: "LexendExtraLight";
-  src: url("/fonts/lexend/Lexend-ExtraLight.ttf");
+  src: url("fonts/lexend/Lexend-ExtraLight.ttf");
 }
 
 @font-face {
   font-family: "LexendLight";
-  src: url("/fonts/lexend/Lexend-Light.ttf");
+  src: url("fonts/lexend/Lexend-Light.ttf");
 }
 
 @font-face {
   font-family: "LexendMedium";
-  src: url("/fonts/lexend/Lexend-Medium.ttf");
+  src: url("fonts/lexend/Lexend-Medium.ttf");
 }
 
 @font-face {
   font-family: "LexendRegular";
-  src: url("/fonts/lexend/Lexend-Regular.ttf");
+  src: url("fonts/lexend/Lexend-Regular.ttf");
 }
 
 @font-face {
   font-family: "DMSerifRegular";
-  src: url("/fonts/DMSerif/DMSerifDisplay-Regular.ttf");
+  src: url("fonts/DMSerif/DMSerifDisplay-Regular.ttf");
 }
 
 :root {
