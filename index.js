@@ -34,7 +34,7 @@ document.getElementById("year").innerHTML = year;
 let data = [
   {
     id: 1,
-    image: "/images/cap.png",
+    image: "images/cap.png",
     name: "Baseball Cap Cool Brand",
     rating: 4,
     price: 30,
@@ -44,7 +44,7 @@ let data = [
   },
   {
     id: 2,
-    image: "/images/glasses.png",
+    image: "images/glasses.png",
     name: "Black Frame Glasses",
     rating: 3,
     price: 75,
@@ -54,7 +54,7 @@ let data = [
   },
   {
     id: 3,
-    image: "/images/women-polo.png",
+    image: "images/women-polo.png",
     name: "Polo Shirt Women",
     rating: 5,
     price: 50,
@@ -64,7 +64,7 @@ let data = [
   },
   {
     id: 4,
-    image: "/images/watch-gold.png",
+    image: "images/watch-gold.png",
     name: "Fancy Gold Watch",
     rating: 5,
     price: 970,
@@ -75,7 +75,7 @@ let data = [
   },
   {
     id: 5,
-    image: "/images/watch-dark.png",
+    image: "images/watch-dark.png",
     name: "Even Fancier Watch",
     rating: 5,
     price: 1700,
@@ -86,7 +86,7 @@ let data = [
   },
   {
     id: 6,
-    image: "/images/shorts.png",
+    image: "images/shorts.png",
     name: "Shorts One of a Kind",
     rating: 4,
     price: 50,
@@ -96,7 +96,7 @@ let data = [
   },
   {
     id: 7,
-    image: "/images/watch-brown.png",
+    image: "images/watch-brown.png",
     name: "Another Awesome Watch",
     rating: 3,
     price: 530,
@@ -107,7 +107,7 @@ let data = [
   },
   {
     id: 8,
-    image: "/images/jacket.png",
+    image: "images/jacket.png",
     name: "Denim Jacket",
     rating: 4,
     price: 120,
@@ -117,7 +117,7 @@ let data = [
   },
   {
     id: 9,
-    image: "/images/jacket-dark.png",
+    image: "images/jacket-dark.png",
     name: "Dark Jacket Men's",
     rating: 5,
     price: 150,
@@ -127,7 +127,7 @@ let data = [
   },
   {
     id: 10,
-    image: "/images/handbag-brown.png",
+    image: "images/handbag-brown.png",
     name: "Brown handbag",
     rating: 4,
     price: 711,
@@ -138,7 +138,7 @@ let data = [
   },
   {
     id: 11,
-    image: "/images/handbag-pink.png",
+    image: "images/handbag-pink.png",
     name: "Pink handbag",
     rating: 5,
     price: 300,
@@ -149,7 +149,7 @@ let data = [
   },
   {
     id: 12,
-    image: "/images/handbag-red.png",
+    image: "images/handbag-red.png",
     name: "Red Handbag",
     rating: 4,
     price: 400,
@@ -160,7 +160,7 @@ let data = [
   },
   {
     id: 13,
-    image: "/images/watch-hamilton.png",
+    image: "images/watch-hamilton.png",
     name: "Hamilton Watch Black",
     rating: 5,
     price: 750,
@@ -171,7 +171,7 @@ let data = [
   },
   {
     id: 14,
-    image: "/images/ray-ban-aviators.png",
+    image: "images/ray-ban-aviators.png",
     name: "Ray Ban Aviators",
     rating: 5,
     price: 230,
@@ -181,7 +181,7 @@ let data = [
   },
   {
     id: 15,
-    image: "/images/shirt-pink.png",
+    image: "images/shirt-pink.png",
     name: "Pink Shirt Women",
     rating: 4,
     price: 60,
@@ -192,7 +192,7 @@ let data = [
 
   {
     id: 16,
-    image: "/images/shirt-white.png",
+    image: "images/shirt-white.png",
     name: "White Shirt Women",
     rating: 4,
     price: 70,
@@ -219,7 +219,7 @@ const elements = data.map((item) => {
 </div>
 <div class="item-text">
   <h5>${item.name}</h5>
-  <img class="stars" src="/images/${
+  <img class="stars" src="images/${
     item.rating
   }-stars.svg" alt="The rating of this product is ${item.rating} stars" />
   <p>$${item.price}</p>
@@ -327,7 +327,7 @@ function displayFilteredItems(filteredItems) {
 </div>
 <div class="item-text">
   <h5>${item.name}</h5>
-  <img class="stars" src="/images/${
+  <img class="stars" src="images/${
     item.rating
   }-stars.svg" alt="The rating of this product is ${item.rating} stars" />
   <p>$${item.price}</p>
