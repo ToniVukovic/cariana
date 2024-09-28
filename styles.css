@@ -270,6 +270,12 @@ main::before {
   }
 }
 
+@media (min-width: 440px) and (max-width: 767px) {
+   .promo-box-content {
+    padding-top: 200px;
+  }
+}
+
 .promo-box-text {
   padding: 15px;
   display: flex;
